@@ -1,0 +1,8 @@
+//Audit Safe Attachments 
+let StartTime = now() - 30d;
+let EndTime = now();
+CloudAppEvents
+| where Timestamp between (StartTime .. EndTime)
+| where Application == "Microsoft Exchange Online"
+| where ActionType has "atp"
+| project Timestamp, Application, ActionType, AccountDisplayName, IPAddress
