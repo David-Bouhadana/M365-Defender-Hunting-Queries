@@ -1,5 +1,5 @@
-// Detecting new Copilot extensions
-// Détection des nouvelles extensions Copilot
+//Detecting new Copilot extensions
+//Détection des nouvelles extensions Copilot
 let WLExtensions = dynamic(["BingWebSearch"]);
 CloudAppEvents
 | where Timestamp > ago(1h)
