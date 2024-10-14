@@ -1,0 +1,6 @@
+//Email & collaboration tables - Daily mail detection by phishing activity for past 30 days
+EmailEvents
+| where Timestamp > ago(30d)
+| where ThreatTypes has "Phish"
+| summarize PhishCount = count() by bin(Timestamp, 1d)
+| render timechart
