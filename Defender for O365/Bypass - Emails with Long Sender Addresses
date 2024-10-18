@@ -1,0 +1,6 @@
+// This query retrieves email events from the last 24 hours where the sender's email address length is greater than 200 characters and there is exactly one attachment.
+// It projects the sender's email address, the length of the sender's email address, and the delivery action.
+EmailEvents
+| where Timestamp > ago(24h)
+| where strlen(SenderFromAddress) > 200 and AttachmentCount == 1
+| project SenderFromAddress, SenderEmailLength = strlen(SenderFromAddress), DeliveryAction
