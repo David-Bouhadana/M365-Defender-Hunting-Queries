@@ -9,6 +9,14 @@ This KQL query retrieves email events from the last 24 hours where the sender's 
 
 This query is useful for identifying suspicious or abnormal emails sent in the last 24 hours with a very long sender email address and exactly one attachment.
 
+# Email Threat Report Spam
+
+This KQL query retrieves and visualizes email events that have been detected with spam activity over the past 30 days. It performs the following steps:
+
+1. **Filters the data** to include only email events from the last 30 days.
+2. **Checks for spam** by ensuring that the `ThreatTypes` field contains the term "Spam".
+3. **Aggregates the data** by counting the number of spam detections per day.
+4. **Visualizes the results** using a line chart to show the daily trend of spam detections.
 
 # Email Threat Report Phishing
 
