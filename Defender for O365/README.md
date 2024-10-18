@@ -1,3 +1,12 @@
+# Audit Safe Attachments
+
+This KQL query retrieves and visualizes cloud application events related to safe attachments over the past 30 days. It performs the following steps:
+
+1. **Defines the time range** by setting the start time to 30 days ago and the end time to the current time.
+2. **Filters the data** to include only events from Microsoft Exchange Online.
+3. **Checks for ATP actions** by ensuring that the `ActionType` field contains the term "atp".
+4. **Projects the relevant fields** including `Timestamp`, `Application`, `ActionType`, `AccountDisplayName`, and `IPAddress`.
+
 # Bypass Emails with long sender addresses
 
 This KQL query retrieves email events from the last 24 hours where the sender's email address length is greater than 200 characters and there is exactly one attachment. It projects the sender's email address, the length of the sender's email address, and the delivery action.
