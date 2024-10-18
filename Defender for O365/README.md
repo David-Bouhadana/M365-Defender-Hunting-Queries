@@ -1,3 +1,15 @@
+# Bypass Emails with long sender addresses
+
+This KQL query retrieves email events from the last 24 hours where the sender's email address length is greater than 200 characters and there is exactly one attachment. It projects the sender's email address, the length of the sender's email address, and the delivery action.
+
+**Filtering by Timestamp**: The query filters email events to include only those that occurred in the last 24 hours.
+**Calculating Sender Email Length**: The query calculates the length of the sender's email address.
+**Filtering by Email Length and Attachment Count**: The query filters events to include only those where the sender's email address length is greater than 200 characters and the attachment count is equal to 1.
+**Projecting Columns**: The query projects the columns `SenderFromAddress`, `SenderEmailLength`, and `DeliveryAction`.
+
+This query is useful for identifying suspicious or abnormal emails sent in the last 24 hours with a very long sender email address and exactly one attachment.
+
+
 # Email Threat Report Phishing
 
 This KQL query is designed to detect phishing activity in email and collaboration tables over the past 30 days. The query performs the following steps:
