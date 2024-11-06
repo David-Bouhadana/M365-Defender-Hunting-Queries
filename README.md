@@ -7,6 +7,7 @@ Welcome to the M365 Defender Hunting Queries repository. This repository contain
 - **Azure**: Contains KQL queries for hunting and analyzing security events in Azure.
 - **Defender XDR**: Contains KQL queries for extended detection and response (XDR) in Microsoft Defender.
 - **Sentinel**: Contains KQL queries for Microsoft Sentinel, a cloud-native SIEM solution.
+- **Defender for O365**: Contains KQL queries for monitoring and analyzing security events in Microsoft Defender for Office 365.
 
 ## Getting Started
 
