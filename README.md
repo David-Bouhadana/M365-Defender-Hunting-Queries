@@ -25,7 +25,7 @@ To get started with using the queries in this repository, follow these steps:
 
 Script written by **David Bouhadana**.
 
-- Blog: [Oghma Site](https://oghmasite.wordpress.com/)
+- Blog: [M365 journey](https://m365journey.blog/)
 
 ## License
 
